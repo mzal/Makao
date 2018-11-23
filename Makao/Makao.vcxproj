@@ -143,6 +143,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Ace.cpp" />
+    <ClCompile Include="BasicBDiamondDBot.cpp" />
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="Deck.cpp" />
     <ClCompile Include="Four.cpp" />
@@ -151,6 +152,7 @@
     <ClCompile Include="Makao.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Stack.cpp" />
+    <ClCompile Include="Supa_Player.cpp" />
     <ClCompile Include="Three.cpp" />
     <ClCompile Include="Two.cpp" />
     <ClCompile Include="Valet.cpp" />
@@ -158,6 +160,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ace.h" />
+    <ClInclude Include="BasicBDiamondDBot.h" />
     <ClInclude Include="Card.h" />
     <ClInclude Include="Cards.h" />
     <ClInclude Include="Deck.h" />
@@ -167,6 +170,7 @@
     <ClInclude Include="King.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Stack.h" />
+    <ClInclude Include="Supa_Player.h" />
     <ClInclude Include="Three.h" />
     <ClInclude Include="Two.h" />
     <ClInclude Include="Valet.h" />
