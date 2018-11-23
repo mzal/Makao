@@ -33,8 +33,8 @@ int main()
 	}
 	for (int i = 0; i < 2; i++)
 		printf("Player%d:\t\t%d\n", i, fullResults[i]);
-  printf("Supa_Player:\t\t%d\n", fullResults[2]);
-  printf("BasicBDiamondDBot:\t\t%d\n", fullResults[3]);
+	printf("Supa_Player:\t\t%d\n", fullResults[2]);
+	printf("BasicBDiamondDBot:\t\t%d\n", fullResults[3]);
 
     return 0;
 }
