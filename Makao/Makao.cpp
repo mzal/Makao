@@ -1,3 +1,4 @@
+#include <cstdio>
 #include "Deck.h"
 #include "Stack.h"
 #include "Cards.h"
