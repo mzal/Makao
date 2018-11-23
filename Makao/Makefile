@@ -3,10 +3,10 @@ CXXFLAGS = -Wall -g
 
 all: Makao
 
-Makao: Makao.o Deck.o Card.o Stack.o Validity.o Game.o Player.o Ace.o King.o Valet.o Four.o Three.o Two.o
-	$(CXX) $(CXXFLAGS) -o Makao Makao.o Deck.o Card.o Stack.o Validity.o Game.o Player.o Ace.o King.o Valet.o Four.o Three.o Two.o
+Makao: Makao.o Deck.o Card.o Stack.o Validity.o Game.o Player.o Ace.o King.o Valet.o Four.o Three.o Two.o Supa_Player.o BasicBDiamondDBot.o
+	$(CXX) $(CXXFLAGS) -o Makao Makao.o Deck.o Card.o Stack.o Validity.o Game.o Player.o Ace.o King.o Valet.o Four.o Three.o Two.o Supa_Player.o BasicBDiamondDBot.o
 
-Makao.o: Makao.cpp Deck.h Stack.h Cards.h Game.h Player.h Card.h FunctionalCards.h Ace.h King.h Valet.h Four.h Three.h Two.h
+Makao.o: Makao.cpp Deck.h Stack.h Cards.h Game.h Player.h Card.h FunctionalCards.h Ace.h King.h Valet.h Four.h Three.h Two.h Supa_Player.h BasicBDiamondDBot.h
 	$(CXX) $(CXXFLAGS) -c Makao.cpp
 Deck.o: Deck.h Card.h Cards.h FunctionalCards.h Ace.h King.h Valet.h Four.h Three.h Two.h
 Card.o: Card.h Cards.h
@@ -20,6 +20,8 @@ Valet.o: Valet.h Card.h Cards.h
 Four.o: Four.h Card.h Cards.h
 Three.o: Three.h Card.h Cards.h
 Two.o: Two.h Card.h Cards.h
+Supa_Player.o: Supa_Player.h Player.h Validity.h Card.h Cards.h Stack.h Deck.h FunctionalCards.h Ace.h King.h Valet.h Four.h Three.h Two.h
+BasicBDiamondDBot.o: BasicBDiamondDBot.h Player.h Validity.h Card.h Cards.h Stack.h Deck.h FunctionalCards.h Ace.h King.h Valet.h Four.h Three.h Two.h
 
 clean:
 	rm *.o

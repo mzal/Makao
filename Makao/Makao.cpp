@@ -13,7 +13,7 @@ int main()
 	std::vector<Player*> players;
 	for (int i = 0; i < 2; i++)
 		players.push_back(new Player());
-  players.push_back(new Supa_Player());
+	players.push_back(new Supa_Player());
 	players.push_back(new BasicBDiamondDBot());
 	std::vector<int> results;
 	std::vector<int> fullResults;
